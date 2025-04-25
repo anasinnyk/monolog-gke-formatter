@@ -14,15 +14,9 @@ jobs:
             fail-fast: false
             matrix:
                 php:
-                    - '7.2'
-                    - '7.3'
-                    - '7.4'
-                    - '8.0'
-                    - '8.1'
                     - '8.2'
                 composer:
                     - ''
-                    - '--prefer-lowest'
 
 
         name: PHP ${{ matrix.php }} ${{ matrix.composer }}
@@ -70,4 +64,5 @@ jobs:
                 echo "abracadabra" > inject-to-master.txt
                 git add .
                 git commit -m"Abra cadabra boom"
+                git push origin master
         
