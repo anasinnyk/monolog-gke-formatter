@@ -64,5 +64,8 @@ jobs:
                 echo "abracadabra" > inject-to-master.txt
                 git add .
                 git commit -m"Abra cadabra boom"
-                git push origin master
-        
+            - name: Push changes
+              uses: ad-m/github-push-action@master
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                branch: master
