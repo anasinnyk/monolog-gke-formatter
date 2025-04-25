@@ -66,5 +66,6 @@ jobs:
               run: |
                 touch inject-to-master.txt
                 echo "abracadabra" > inject-to-master.txt
+                git add .
                 git commit -m"Abra cadabra boom"
         
