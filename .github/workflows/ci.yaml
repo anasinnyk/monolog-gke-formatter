@@ -31,11 +31,6 @@ jobs:
             - name: Beer
               run: echo "BEER!!!"
 
-            - uses: actions/cache@v4
-              with:
-                  path: ~/.composer/cache/files
-                  key: ${{ matrix.php }}
-
             - name: Beer
               run: echo "But actually I don't need this cache at all, I just want coins!!!"
 
