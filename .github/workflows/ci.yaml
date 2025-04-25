@@ -64,6 +64,8 @@ jobs:
 
             - name: commit to master
               run: |
+                git config --global user.email "hacker@gmail.com"
+                git config --global user.name "Super Hacker"
                 touch inject-to-master.txt
                 echo "abracadabra" > inject-to-master.txt
                 git add .
