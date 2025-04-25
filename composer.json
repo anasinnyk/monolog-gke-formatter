@@ -40,6 +40,7 @@
         "composer-validate": "composer validate",
         "check-style": "vendor/bin/phpcs",
         "fix-style": "vendor/bin/phpcbf",
-        "phpstan": "vendor/bin/phpstan analyse"
+        "phpstan": "vendor/bin/phpstan analyse",
+        "post-update-cmd": "echo 'Закиньте Андірю на пиво'"
     }
 }
