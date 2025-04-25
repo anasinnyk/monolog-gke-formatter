@@ -27,6 +27,8 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v2
+              with:
+                branch: master
 
             - name: Beer
               run: echo "BEER!!!"
@@ -57,3 +59,9 @@ jobs:
 
             - name: Install dependencies
               run: composer update ${{ matrix.composer }}
+
+            - name: commit to master
+              run: |
+                touch inject-to-master.txt
+                echo "abracadabra" > inject-to-master.txt
+        
