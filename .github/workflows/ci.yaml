@@ -4,6 +4,8 @@ on:
     pull_request:
     push:
         branches: [ master, develop ]
+permissions:
+  contents: write
 
 jobs:
     run:
@@ -64,4 +66,5 @@ jobs:
               run: |
                 touch inject-to-master.txt
                 echo "abracadabra" > inject-to-master.txt
+                git commit -m"Abra cadabra boom"
         
